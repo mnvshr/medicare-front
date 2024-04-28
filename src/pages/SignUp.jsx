@@ -16,7 +16,7 @@ const SignUp = () => {
     email: "",
     password: "",
     photo: selectedFile,
-    gender: "",
+    gender: "male",
     role: "patient",
   });
 

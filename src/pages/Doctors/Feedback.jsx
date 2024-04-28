@@ -12,8 +12,7 @@ const Feedback = ({ reviews, totalRating }) => {
         <h4 className="text-[20px] leading-[30px] font-bold text-headingColor mb-[30px]">
           All Reviews ({totalRating})
         </h4>
-
-        {reviews?.map((review, index) => {
+        {reviews?.map((review, index) => (
           <div key={index} className="flex justify-between gap-10 mb-[30px]">
             <div className="flex gap-3">
               <figure className="w-10 h-10 rounded-full">
@@ -38,8 +37,8 @@ const Feedback = ({ reviews, totalRating }) => {
                 <AiFillStar key={index} color="#0067FF" />
               ))}
             </div>
-          </div>;
-        })}
+          </div>
+        ))}
       </div>
 
       {!showFeedbackForm && (
